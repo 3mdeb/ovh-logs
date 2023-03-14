@@ -188,17 +188,14 @@ inspect_args() {
 # :command.function
 ovh_logs_download_command() {
   # src/download_command.sh
+  # SPDX-FileCopyrightText: 2023 3mdeb <contact@3mdeb.com>
+  #
+  # SPDX-License-Identifier: MIT
+
   MONTH="${args[month]}"
   YEAR="${args[year]}"
   DOMAIN="${args[domain]}"
   OUTPUT="${args[output]}"
-
-  echo "MONTH=$MONTH"
-  echo "YEAR=$YEAR"
-  echo "DOMAIN=$DOMAIN"
-  echo "OVH_USER=$OVH_USER"
-  echo "OVH_PASSWORD=$OVH_PASSWORD"
-  echo "OVH_URL=$OVH_URL"
 
   case "${MONTH}" in
     "01" );;
@@ -418,6 +415,10 @@ initialize() {
   set -e
 
   # src/initialize.sh
+  # SPDX-FileCopyrightText: 2023 3mdeb <contact@3mdeb.com>
+  #
+  # SPDX-License-Identifier: MIT
+
 
 }
 

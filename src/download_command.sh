@@ -7,13 +7,6 @@ YEAR="${args[year]}"
 DOMAIN="${args[domain]}"
 OUTPUT="${args[output]}"
 
-echo "MONTH=$MONTH"
-echo "YEAR=$YEAR"
-echo "DOMAIN=$DOMAIN"
-echo "OVH_USER=$OVH_USER"
-echo "OVH_PASSWORD=$OVH_PASSWORD"
-echo "OVH_URL=$OVH_URL"
-
 case "${MONTH}" in
   "01" );;
   "02" );;
