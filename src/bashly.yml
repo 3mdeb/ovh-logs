@@ -1,0 +1,41 @@
+# SPDX-FileCopyrightText: 2023 3mdeb <contact@3mdeb.com>
+#
+# SPDX-License-Identifier: MIT
+
+name: ovh-logs
+help: Script downloading logs from OVH Website Hosting
+version: 0.1.0
+
+environment_variables:
+- name: ovh_user
+  help: User name for accessing OVH logs
+  required: true
+- name: ovh_password
+  help: Password for accessing OVH logs
+  required: true
+- name: ovh_url
+  help: "OVH URL for downloading logs. E.g.: logs.clusterxxx.hosting.ovh.net"
+  required: true
+
+commands:
+- name: download
+  alias: d
+  help: Download logs from a given month
+
+  args:
+  - name: domain
+    required: true
+    help: "Domain to download logs for. E.g.: my.website.com"
+  - name: month
+    required: true
+    help: Month to download logs for
+  - name: year
+    required: true
+    help: Year to download logs for
+  - name: output
+    help: "Path to the output directory. Defaults to: ./logs"
+    default: "./logs"
+
+  examples:
+  - ovh-logs download my.website.com 1 2023
+  - ovh-logs download website.com 12 2022 /tmp/ovh-logs
