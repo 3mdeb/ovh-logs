@@ -66,7 +66,7 @@ Arguments:
     Default: ./logs
 
 Examples:
-  ovh-logs download my.website.com 1 2023
+  ovh-logs download my.website.com 01 2023
   ovh-logs download website.com 12 2022 /tmp/ovh-logs
 ```
 

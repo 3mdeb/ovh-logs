@@ -125,7 +125,7 @@ ovh_logs_download_usage() {
 
     # :command.usage_examples
     printf "%s\n" "Examples:"
-    printf "  ovh-logs download my.website.com 1 2023\n"
+    printf "  ovh-logs download my.website.com 01 2023\n"
     printf "  ovh-logs download website.com 12 2022 /tmp/ovh-logs\n"
     echo
 
